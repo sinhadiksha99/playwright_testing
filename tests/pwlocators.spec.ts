@@ -1,4 +1,4 @@
-import { test, expect, Locator } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test("pw_locator_optimized", async ({ page }) => {
     await page.goto("https://demo.nopcommerce.com/");
