@@ -5,7 +5,7 @@ import fs from 'fs';
 //reading data from json
 const path = "testData/testData.csv";
 const loginData: any = fs.readFileSync(path, 'utf-8');
-const records = parse(loginData,{ columns:true , skip_empty_lines:true});
+const records:any = parse(loginData,{ columns:true , skip_empty_lines:true});
 
 test.describe("Data driven Test", async () => {
     for (const data of records) {

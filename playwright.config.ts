@@ -18,10 +18,10 @@ export default defineConfig({
   // on 'npx playwright test' it will run all test cases except sanity
 
   //set global test timeout
-  timeout:60000,
+  timeout: 60000,
 
   //assertion timeout
-  expect:{ timeout: 8000 },
+  expect: { timeout: 8000 },
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -31,7 +31,9 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  // reporter: 'html',
+  // reporter: 'allure-playwright',
+  reporter:'allure-playwright',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
@@ -39,9 +41,9 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'retain-on-failure',
-    testIdAttribute:'data-pw',
-    screenshot:'only-on-failure',
-    video:'retain-on-failure'
+    testIdAttribute: 'data-pw',
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure'
     //  viewport:{width:1000, height:1000 }
   },
 
