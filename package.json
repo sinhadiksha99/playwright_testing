@@ -15,7 +15,9 @@
   },
   "dependencies": {
     "@axe-core/playwright": "^4.11.1",
+    "@faker-js/faker": "^10.3.0",
     "csv-parse": "^6.1.0",
+    "luxon": "^3.7.2",
     "xlsx": "^0.18.5"
   }
 }
