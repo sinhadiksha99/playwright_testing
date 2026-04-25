@@ -10,8 +10,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Clones your repo from the master branch
-                git branch: 'master', url: 'https://github.com'
+                // Clones your repo from the main branch
+                git branch: 'main', url: 'https://github.com'
             }
         }
 
