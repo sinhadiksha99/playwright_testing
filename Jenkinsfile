@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clones your repo from the main branch
-                git branch: 'main', url: 'https://github.com'
+                git branch: 'main', url: 'https://github.com/sinhadiksha99/'
             }
         }
 
