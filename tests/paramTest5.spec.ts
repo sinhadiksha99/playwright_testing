@@ -1,6 +1,5 @@
 import { expect, test } from '@playwright/test';
 import * as XLSX from 'xlsx';
-import fs from 'fs';
 
 //reading file--> workbook --> sheets --> rows --> columns
 const path = "testData/excel.xlsx";

@@ -36,7 +36,7 @@ test("get booking details using name-query param-2", async ({ request }) => {
     await expect(response.ok()).toBeTruthy();
     await expect(responseBody.length).not.toBe(0)
     console.log(responseBody.length)
-    for(const resb of responseBody){""
+    for(const resb of responseBody){
         expect(resb).toHaveProperty("bookingid");
         expect(typeof resb.bookingid).toBe("number")
         // console.log(resb.bookingid)
