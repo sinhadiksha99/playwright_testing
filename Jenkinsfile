@@ -32,7 +32,7 @@ pipeline {
         stage('Run Sanity Tests') {
             steps {
                 // Matches your exact run command: 'npm run test:sanity'
-                sh 'npm run test:sanity'
+                sh 'npx playwright test'
             }
         }
     }
